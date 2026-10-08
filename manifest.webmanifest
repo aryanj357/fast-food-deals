@@ -1,0 +1,24 @@
+{
+ "name": "Fast Food Deals",
+ "short_name": "Fast Food De",
+ "description": "Current nationwide U.S. fast-food deals from official restaurant websites.",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#faf7f2",
+ "theme_color": "#c8102e",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

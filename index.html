@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fast Food Deals</title>
+<meta name="description" content="Current nationwide U.S. fast-food deals, collected daily from official restaurant websites.">
+<meta name="theme-color" content="#c8102e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  :root {
+    --bg: #faf7f2; --card: #ffffff; --text: #1d1b19; --muted: #6b645c; --line: #e7e1d8;
+    --brand: #c8102e; --brand-ink: #ffffff; --gv-bg: #fff1c2; --gv-ink: #6b4e00;
+    --soon-bg: #ffe2d6; --soon-ink: #8a2c06; --chip-bg: #f1ece4; --chip-ink: #3f3a34;
+    --focus: #1a5fd0; --head-bg: #c8102e; --head-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151311; --card: #1f1c19; --text: #f3efe9; --muted: #a59d93; --line: #34302b;
+      --brand: #ff5a6e; --brand-ink: #1a0b0d; --gv-bg: #4a3a0a; --gv-ink: #ffe08a;
+      --soon-bg: #4d2414; --soon-ink: #ffb898; --chip-bg: #2b2723; --chip-ink: #ddd6cc;
+      --focus: #7fb0ff; --head-bg: #7a0d1d; --head-ink: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { background: var(--head-bg); color: var(--head-ink); padding: 28px 0 22px; }
+  header h1 { margin: 0 0 4px; font-size: clamp(1.6rem, 4vw, 2.2rem); letter-spacing: -0.01em; }
+  header p { margin: 0; opacity: .9; }
+  .stats { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; font-size: .95rem; }
+  .stats b { font-size: 1.15rem; }
+  .controls {
+    position: sticky; top: 0; z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line);
+    padding: 12px 0;
+  }
+  .controls .wrap { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tabs button, select, input[type=search] {
+    font: inherit; border: 1px solid var(--line); background: var(--card); color: var(--text);
+    border-radius: 999px; padding: 7px 14px; min-height: 40px;
+  }
+  .tabs button { cursor: pointer; }
+  .tabs button[aria-pressed=true] { background: var(--text); color: var(--bg); border-color: var(--text); }
+  select { border-radius: 10px; }
+  input[type=search] { border-radius: 10px; flex: 1 1 180px; min-width: 0; }
+  @media (max-width: 600px) { .controls { position: static; } }
+  main { padding: 18px 0 40px; }
+  .count { color: var(--muted); margin: 0 0 12px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  .deal {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .top { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .rest { font-weight: 700; color: var(--brand); text-transform: uppercase; font-size: .8rem; letter-spacing: .05em; }
+  .type { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+  .deal h2 { font-size: 1.05rem; margin: 0; line-height: 1.3; overflow-wrap: anywhere; }
+  .deal p { margin: 0; color: var(--muted); font-size: .93rem; overflow-wrap: anywhere; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: var(--chip-bg); color: var(--chip-ink); border-radius: 999px; padding: 2px 10px; font-size: .8rem; }
+  .chip.gv { background: var(--gv-bg); color: var(--gv-ink); font-weight: 700; }
+  .chip.soon { background: var(--soon-bg); color: var(--soon-ink); font-weight: 700; }
+  .meta { margin-top: auto; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap;
+          font-size: .88rem; border-top: 1px solid var(--line); padding-top: 10px; }
+  .meta a { font-weight: 600; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 0; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; padding: 20px 0 40px; }
+  footer ul { padding-left: 18px; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Fast Food Deals</h1>
+    <p>Nationwide U.S. fast-food deals, checked daily on the restaurants' own websites.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="tabs" role="group" aria-label="Show">
+      <button type="button" data-view="all" aria-pressed="true">All deals</button>
+      <button type="button" data-view="gv" aria-pressed="false">Free &amp; BOGO</button>
+      <button type="button" data-view="soon" aria-pressed="false">Ending soon</button>
+    </div>
+    <label class="visually-hidden" for="restaurant">Restaurant</label>
+    <select id="restaurant"><option value="">All restaurants</option></select>
+    <label class="visually-hidden" for="q">Search deals</label>
+    <input id="q" type="search" placeholder="Search deals" autocomplete="off">
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="count" id="count" aria-live="polite"></p>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>No deals match these filters.</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Last updated <span id="updated"></span>. Deals come only from official restaurant websites, newsrooms and press releases.
+      Each deal links to its official source. <strong>Always check there before you go</strong>: prices and participation vary by location, and offers can end early.</p>
+    <p>"End date not announced" means the restaurant hasn't published one; we never guess dates.
+      This site is not affiliated with, endorsed by or sponsored by any restaurant. All trademarks belong to their owners.</p>
+    <p>Restaurants checked: <span id="sources"></span></p>
+  </div>
+</footer>
+
+<script id="deal-data" type="application/json">{"title": "Fast Food Deals", "updated": "2026-10-08T12:57", "updated_display": "October 8, 2026", "restaurants_checked": ["McDonald's", "Taco Bell", "Chipotle", "Chick-fil-A", "Subway", "Domino's"], "deals": [{"restaurant": "Taco Bell", "title": "Taco Bell® and Duolingo Take National Taco Day Global, Uniting Fans Around One Word the World Already Speaks: Taco", "summary": "Duo Habanero sauce is free in the U.S. with any Doritos® Locos Tacos order and in participating restaurants globally (limit 1 per qualifying item).", "offer_type": "Free Item", "great_value": true, "price": null, "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": true, "promo_code": null, "source_url": "https://www.tacobell.com/newsroom/taco-bell-and-duolingo-take-national-taco-day-global"}, {"restaurant": "Taco Bell", "title": "Taco Bell® and Milk Bar® Reunite for All-new Birthday Cake Empanada", "summary": "Taco Bell Rewards Members celebrating their birthday while the empanada is on menus – who have also added their birthday to their profile – can choose between…", "offer_type": "Free Item", "great_value": true, "price": null, "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": true, "requires_purchase": false, "promo_code": null, "source_url": "https://www.tacobell.com/newsroom/taco-bell-milk-bar-reunite"}, {"restaurant": "Domino's", "title": "Limited time offer 10/5 - 10/11 50% off all menu priced pizzas.", "summary": "Get 50% off all menu-priced pizzas thru 10/11.", "offer_type": "Percent Off", "great_value": false, "price": null, "valid_from": "2026-10-05", "valid_through": "2026-10-11", "status": "Expiring Soon", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.dominos.com/deals"}, {"restaurant": "Domino's", "title": "New Introducing The Domino™ Try one for $5.99 each.", "summary": "Our personal pizza with a Detroit Style Parmesan crust. Grab one with your favorite topping for just $5.99 each. PRICES HIGHER FOR SOME LOCATIONS. You must…", "offer_type": "Price Point", "great_value": false, "price": "$5.99", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.dominos.com/deals"}, {"restaurant": "Domino's", "title": "Parmesan Stuffed Crust Just $10.99 each.", "summary": "Mix and Match any two or more 2-topping Parmesan Stuffed Crust Pizzas for just $10.99 each! PRICES HIGHER FOR SOME LOCATIONS. You must ask for this limited…", "offer_type": "Price Point", "great_value": false, "price": "$10.99", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": true, "promo_code": null, "source_url": "https://www.dominos.com/deals"}, {"restaurant": "Domino's", "title": "The perfect combo Get all of this for just $19.99.", "summary": "PRICES HIGHER FOR SOME LOCATIONS. Get two medium 1-topping pizzas or two of the NEW 1-topping Dominos. Then, throw in two orders of 16-piece bread…", "offer_type": "Price Point", "great_value": false, "price": "$19.99", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.dominos.com/deals"}, {"restaurant": "Domino's", "title": "Try the new Domino™ Mix and match Choose any two for $6.99 each.", "summary": "PRICES HIGHER FOR SOME LOCATIONS. Choose any 2 or more items, including the NEW Domino™ : our personal pizza with a Detroit Style Parmesan crust.", "offer_type": "Price Point", "great_value": false, "price": "$6.99", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.dominos.com/deals"}, {"restaurant": "Domino's", "title": "Weeklong carryout Carry out for just $7.99 each.", "summary": "PRICES HIGHER FOR SOME LOCATIONS. Spend less dough when you carry out a Large 1-topping pizza on any of our 6 delicious crusts, 8-piece wings or boneless…", "offer_type": "Price Point", "great_value": false, "price": "$7.99", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.dominos.com/deals"}, {"restaurant": "McDonald's", "title": "$4 Meal Deals: Breakfast", "summary": "Are you a breakfast person? Rise and save. There are options for you:* Pick a Sausage McMuffin or Sausage Biscuit Get Hash Browns and a small Premium Roast…", "offer_type": "Price Point", "great_value": false, "price": "$4", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"}, {"restaurant": "McDonald's", "title": "Meal Deals starting at $5: Lunch to late night", "summary": "Are you team lunch, dinner or late night? There are options for you, too* Pick a McDouble or McChicken Get a 4 piece Chicken McNuggets, small Fries and a…", "offer_type": "Price Point", "great_value": false, "price": "$5", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"}, {"restaurant": "McDonald's", "title": "The Under $3 Menu: lots of choices", "summary": "Breakfast: Sausage McMuffin ® Sausage Biscuit Sausage Burrito Hash Browns Medium Premium Roast Coffee Lunch and Dinner McChicken ® McDouble ® 4 piece Chicken…", "offer_type": "Price Point", "great_value": false, "price": "$3", "valid_from": null, "valid_through": null, "status": "Active", "requires_app": false, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"}, {"restaurant": "McDonald's", "title": "Wanna save $$? Do it with McValue", "summary": "Get more than you expect (and for less) with meal deals, all-day deals, stuff-you-can’t-stop-thinking-about deals & more with McValue . Check out the four…", "offer_type": "Other", "great_value": false, "price": null, "valid_from": null, "valid_through": null, "status": "Active", "requires_app": true, "requires_rewards": false, "requires_purchase": false, "promo_code": null, "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"}]}</script>
+<script>
+(function () {
+  "use strict";
+  var data = JSON.parse(document.getElementById("deal-data").textContent);
+  var deals = data.deals;
+  var state = { view: "all", restaurant: "", q: "" };
+  var grid = document.getElementById("grid");
+  var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  function el(tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+  function niceDate(iso) {
+    var p = iso.split("-");
+    return months[parseInt(p[1], 10) - 1] + " " + parseInt(p[2], 10) + ", " + p[0];
+  }
+  function safeUrl(url) {
+    return /^https:\/\//.test(url) ? url : null;
+  }
+
+  function card(d) {
+    var art = el("article", "deal");
+    var top = el("div", "top");
+    top.appendChild(el("span", "rest", d.restaurant));
+    top.appendChild(el("span", "type", d.offer_type + (d.price ? " · " + d.price : "")));
+    art.appendChild(top);
+    art.appendChild(el("h2", null, d.title));
+    if (d.summary) art.appendChild(el("p", null, d.summary));
+    var chips = el("div", "chips");
+    if (d.great_value) chips.appendChild(el("span", "chip gv", "Great value"));
+    if (d.status === "Expiring Soon") chips.appendChild(el("span", "chip soon", "Ending soon"));
+    if (d.requires_app) chips.appendChild(el("span", "chip", "App / online"));
+    if (d.requires_rewards) chips.appendChild(el("span", "chip", "Rewards members"));
+    if (d.requires_purchase) chips.appendChild(el("span", "chip", "Purchase required"));
+    if (d.promo_code) chips.appendChild(el("span", "chip", "Code " + d.promo_code));
+    if (chips.childNodes.length) art.appendChild(chips);
+    var meta = el("div", "meta");
+    meta.appendChild(el("span", null, d.valid_through ? "Ends " + niceDate(d.valid_through) : "End date not announced"));
+    var url = safeUrl(d.source_url);
+    if (url) {
+      var a = el("a", null, "Official source ↗");
+      a.href = url; a.rel = "noopener nofollow"; a.target = "_blank";
+      meta.appendChild(a);
+    }
+    art.appendChild(meta);
+    return art;
+  }
+
+  function matches(d) {
+    if (state.view === "gv" && !d.great_value) return false;
+    if (state.view === "soon" && d.status !== "Expiring Soon") return false;
+    if (state.restaurant && d.restaurant !== state.restaurant) return false;
+    if (state.q) {
+      var hay = (d.restaurant + " " + d.title + " " + d.summary + " " + d.offer_type).toLowerCase();
+      if (hay.indexOf(state.q) === -1) return false;
+    }
+    return true;
+  }
+
+  function render() {
+    var shown = deals.filter(matches);
+    grid.replaceChildren.apply(grid, shown.map(card));
+    document.getElementById("empty").hidden = shown.length > 0;
+    document.getElementById("count").textContent =
+      shown.length + (shown.length === 1 ? " deal" : " deals") +
+      (shown.length === deals.length ? "" : " of " + deals.length);
+  }
+
+  var restaurants = Array.from(new Set(deals.map(function (d) { return d.restaurant; }))).sort();
+  var select = document.getElementById("restaurant");
+  restaurants.forEach(function (r) { var o = el("option", null, r); o.value = r; select.appendChild(o); });
+
+  var stats = document.getElementById("stats");
+  [[deals.length, "active deals"],
+   [deals.filter(function (d) { return d.great_value; }).length, "free or BOGO"],
+   [restaurants.length, "restaurants"]].forEach(function (s) {
+    var span = el("span"); span.appendChild(el("b", null, String(s[0]))); span.appendChild(document.createTextNode(" " + s[1]));
+    stats.appendChild(span);
+  });
+  document.getElementById("updated").textContent = data.updated_display;
+  document.getElementById("sources").textContent = data.restaurants_checked.join(", ");
+
+  document.querySelectorAll(".tabs button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      state.view = b.dataset.view;
+      document.querySelectorAll(".tabs button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      render();
+    });
+  });
+  select.addEventListener("change", function () { state.restaurant = select.value; render(); });
+  document.getElementById("q").addEventListener("input", function (e) { state.q = e.target.value.trim().toLowerCase(); render(); });
+  render();
+
+  if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  }
+})();
+</script>
+</body>
+</html>
