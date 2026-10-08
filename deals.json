@@ -1,6 +1,6 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-10-08T13:30",
+ "updated": "2026-10-08T13:56",
  "updated_display": "October 8, 2026",
  "restaurants_checked": [
   "McDonald's",
@@ -12,9 +12,45 @@
   "Wendy's",
   "Burger King",
   "Popeyes",
-  "Papa Johns"
+  "Papa Johns",
+  "Sonic",
+  "Arby's",
+  "Dunkin'",
+  "Jimmy John's"
  ],
  "deals": [
+  {
+   "restaurant": "Arby's",
+   "title": "Arby’s Delivers More with New Loaded Rewards™ Loyalty Program and Angie Katsanevas Partnership",
+   "summary": "Here’s what guests can expect with Loaded Rewards: More to Start: Free sandwich with a $5 spend on a first order, plus 2x points on a second order…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": true,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://stories.inspirebrands.com/arbys-angie-katsanevas-partnership/"
+  },
+  {
+   "restaurant": "Dunkin'",
+   "title": "Dunkin'® and L.L.Bean® Debut the Ultimate Fall Blend, a First-Ever Collab Between the Two New England Icons",
+   "summary": "Beginning on the first day of fall, Dunkin’ and L.L.Bean celebrate the season with limited-edition giveaways, a free coffee offer for Dunkin’ Rewards members…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://stories.inspirebrands.com/dunkin-and-ll-bean-collaboration/"
+  },
   {
    "restaurant": "Taco Bell",
    "title": "Taco Bell® and Duolingo Take National Taco Day Global, Uniting Fans Around One Word the World Already Speaks: Taco",
@@ -50,7 +86,7 @@
   {
    "restaurant": "Wendy's",
    "title": "Free Small Chili w/ $5 Purchase",
-   "summary": "Wendy's Chili Free Small Chili w/ $5 Purchase Free Small Chili w/ $5 Purchase Free Small Chili w/ $5 Qualifying Purchase. Claim Offer",
+   "summary": "Wendy's Chili Free Small Chili w/ $5 Qualifying Purchase.",
    "offer_type": "Free Item",
    "great_value": true,
    "price": "$5",
@@ -66,7 +102,7 @@
   {
    "restaurant": "Wendy's",
    "title": "Fryday - Free Any Size Fry w/ $5 Purchase",
-   "summary": "Friday - Free Any Size Fry w/ Purchase Fryday - Free Any Size Fry w/ $5 Purchase Fryday - Free Any Size Fry w/ $5 Purchase Claim Offer",
+   "summary": "Friday - Free Any Size Fry w/ Purchase",
    "offer_type": "Free Item",
    "great_value": true,
    "price": "$5",
@@ -82,7 +118,7 @@
   {
    "restaurant": "Wendy's",
    "title": "Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase",
-   "summary": "Wendy's Wednesday - Free 6pc Nuggs w/ Purchase Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase Claim Offer",
+   "summary": "Wendy's Wednesday - Free 6pc Nuggs w/ Purchase",
    "offer_type": "Free Item",
    "great_value": true,
    "price": "$5",
@@ -192,6 +228,38 @@
    "source_url": "https://www.dominos.com/deals"
   },
   {
+   "restaurant": "Dunkin'",
+   "title": "Dunkin'® Kicks Off Spooky Season with New Green Apple Dunkin' Zero, Purple Marshmallow Cold Foam and All-New Halloween Sips",
+   "summary": "Frightfully Good Deals The popular $6 Meal Deal continues to deliver value with a Bacon, Egg and Cheese Sandwich, crispy Hash Browns and a medium hot or iced…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$6",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://stories.inspirebrands.com/dunkin-new-halloween-sips/"
+  },
+  {
+   "restaurant": "Jimmy John's",
+   "title": "Jimmy John’s, the Official Sandwich Sponsor of ESPN College GameDay, Unveils Exclusive Stadium Tote Giveaway",
+   "summary": "The fan-favorite Fan Feast returns nationwide, and fans can score a free limited-edition stadium tote with purchase while supplies last Jimmy John’s®, the…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://stories.inspirebrands.com/jimmy-johns-exclusive-stadium-tote-giveaway/"
+  },
+  {
    "restaurant": "McDonald's",
    "title": "$4 Meal Deals: Breakfast",
    "summary": "Are you a breakfast person? Rise and save. There are options for you:* Pick a Sausage McMuffin or Sausage Biscuit Get Hash Browns and a small Premium Roast…",
@@ -256,9 +324,25 @@
    "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"
   },
   {
+   "restaurant": "Sonic",
+   "title": "SONIC Kicks Off Football Season with the $7 Big Deal Meal & New Ad Campaign Featuring Baker Mayfield and Bijan Robinson",
+   "summary": "The updated $7 Big Deal Meal now includes a Sundae, making the full meal even sweeter Football and food are one of the greatest pairings of all time, and this…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$7",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://stories.inspirebrands.com/sonic-7-big-deal-meal/"
+  },
+  {
    "restaurant": "Wendy's",
    "title": "$1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase",
-   "summary": "Crispy Chicken Sandwich $1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase $1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase $1 Off Crispy Chicken…",
+   "summary": "Crispy Chicken Sandwich $1 Off Crispy Chicken Sandwich or 4-piece Nuggets w/$5 Qualifying Purchase.",
    "offer_type": "Dollar Off",
    "great_value": false,
    "price": "$1",
@@ -274,7 +358,7 @@
   {
    "restaurant": "Wendy's",
    "title": "$1 off Premium Combo",
-   "summary": "$1 off Premium Combo $1 off Premium Combo Claim Offer",
+   "summary": "",
    "offer_type": "Dollar Off",
    "great_value": false,
    "price": "$1",
@@ -290,7 +374,7 @@
   {
    "restaurant": "Wendy's",
    "title": "$3 Off $20+ Purchase",
-   "summary": "$3 Off $20+ Purchase $3 Off $20+ Purchase Claim Offer",
+   "summary": "",
    "offer_type": "Dollar Off",
    "great_value": false,
    "price": "$3",
@@ -306,7 +390,7 @@
   {
    "restaurant": "Wendy's",
    "title": "99-cent Any Size Soft Drink w/ Qualifying Purchase",
-   "summary": "Glass with Coca-Cola 99-cent Any Size Soft Drink w/ Qualifying Purchase 99-cent Any Size Soft Drink w/ Qualifying Purchase 99-cent Any Size Soft Drink…",
+   "summary": "Glass with Coca-Cola 99-cent Any Size Soft Drink w/Qualifying Purchase - Daily!",
    "offer_type": "Price Point",
    "great_value": false,
    "price": "99-cent",
