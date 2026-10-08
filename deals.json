@@ -1,6 +1,6 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-10-08T12:57",
+ "updated": "2026-10-08T13:30",
  "updated_display": "October 8, 2026",
  "restaurants_checked": [
   "McDonald's",
@@ -8,7 +8,11 @@
   "Chipotle",
   "Chick-fil-A",
   "Subway",
-  "Domino's"
+  "Domino's",
+  "Wendy's",
+  "Burger King",
+  "Popeyes",
+  "Papa Johns"
  ],
  "deals": [
   {
@@ -42,6 +46,54 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://www.tacobell.com/newsroom/taco-bell-milk-bar-reunite"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "Free Small Chili w/ $5 Purchase",
+   "summary": "Wendy's Chili Free Small Chili w/ $5 Purchase Free Small Chili w/ $5 Purchase Free Small Chili w/ $5 Qualifying Purchase. Claim Offer",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": "$5",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "Fryday - Free Any Size Fry w/ $5 Purchase",
+   "summary": "Friday - Free Any Size Fry w/ Purchase Fryday - Free Any Size Fry w/ $5 Purchase Fryday - Free Any Size Fry w/ $5 Purchase Claim Offer",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": "$5",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase",
+   "summary": "Wendy's Wednesday - Free 6pc Nuggs w/ Purchase Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase Claim Offer",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": "$5",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
   },
   {
    "restaurant": "Domino's",
@@ -202,6 +254,70 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "$1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase",
+   "summary": "Crispy Chicken Sandwich $1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase $1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase $1 Off Crispy Chicken…",
+   "offer_type": "Dollar Off",
+   "great_value": false,
+   "price": "$1",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "$1 off Premium Combo",
+   "summary": "$1 off Premium Combo $1 off Premium Combo Claim Offer",
+   "offer_type": "Dollar Off",
+   "great_value": false,
+   "price": "$1",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "$3 Off $20+ Purchase",
+   "summary": "$3 Off $20+ Purchase $3 Off $20+ Purchase Claim Offer",
+   "offer_type": "Dollar Off",
+   "great_value": false,
+   "price": "$3",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
+  },
+  {
+   "restaurant": "Wendy's",
+   "title": "99-cent Any Size Soft Drink w/ Qualifying Purchase",
+   "summary": "Glass with Coca-Cola 99-cent Any Size Soft Drink w/ Qualifying Purchase 99-cent Any Size Soft Drink w/ Qualifying Purchase 99-cent Any Size Soft Drink…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "99-cent",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wendys.com/offers-coupons"
   }
  ]
 }
