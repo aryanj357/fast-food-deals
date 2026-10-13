@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-10-10T15:08",
- "updated_display": "October 10, 2026",
+ "updated": "2026-10-12T21:01",
+ "updated_display": "October 12, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -13,12 +13,329 @@
   "Burger King",
   "Popeyes",
   "Papa Johns",
+  "Little Caesars",
   "Sonic",
   "Arby's",
+  "Jack in the Box",
   "Dunkin'",
-  "Jimmy John's"
+  "Jimmy John's",
+  "Five Guys",
+  "Shake Shack",
+  "Jersey Mike's",
+  "Firehouse Subs",
+  "Qdoba",
+  "Moe's Southwest Grill",
+  "Krispy Kreme",
+  "Baskin-Robbins",
+  "Panera Bread",
+  "Auntie Anne's",
+  "Cinnabon",
+  "Smoothie King",
+  "Wingstop"
+ ],
+ "brands": [
+  {
+   "name": "McDonald's",
+   "color": "#DA291C",
+   "accent": "#FFC72C",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "M"
+  },
+  {
+   "name": "Taco Bell",
+   "color": "#702082",
+   "accent": "#A77BCA",
+   "ink": "#FFFFFF",
+   "logo_bg": "#702082",
+   "initials": "TB"
+  },
+  {
+   "name": "Chipotle",
+   "color": "#441500",
+   "accent": "#A81612",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "C"
+  },
+  {
+   "name": "Chick-fil-A",
+   "color": "#E51636",
+   "accent": "#DD0031",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "CF"
+  },
+  {
+   "name": "Subway",
+   "color": "#008938",
+   "accent": "#FFC600",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "S"
+  },
+  {
+   "name": "Domino's",
+   "color": "#006491",
+   "accent": "#E31837",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "D"
+  },
+  {
+   "name": "Wendy's",
+   "color": "#E2203D",
+   "accent": "#199FDA",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "W"
+  },
+  {
+   "name": "Burger King",
+   "color": "#D62300",
+   "accent": "#FF8732",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "BK"
+  },
+  {
+   "name": "Popeyes",
+   "color": "#D35400",
+   "accent": "#911F2D",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "P"
+  },
+  {
+   "name": "Papa Johns",
+   "color": "#1F5F3A",
+   "accent": "#CF0A2C",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "PJ"
+  },
+  {
+   "name": "Little Caesars",
+   "color": "#E35205",
+   "accent": "#1C1C1C",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "LC"
+  },
+  {
+   "name": "Sonic",
+   "color": "#0067B1",
+   "accent": "#E40046",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "S"
+  },
+  {
+   "name": "Arby's",
+   "color": "#D71920",
+   "accent": "#6E3B20",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "A"
+  },
+  {
+   "name": "Jack in the Box",
+   "color": "#D2232A",
+   "accent": "#1A1A1A",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "JI"
+  },
+  {
+   "name": "Dunkin'",
+   "color": "#DA1884",
+   "accent": "#FF671F",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "D"
+  },
+  {
+   "name": "Jimmy John's",
+   "color": "#1A1A1A",
+   "accent": "#CF102D",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "JJ"
+  },
+  {
+   "name": "Five Guys",
+   "color": "#C8102E",
+   "accent": "#231F20",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "FG"
+  },
+  {
+   "name": "Shake Shack",
+   "color": "#2E6B1F",
+   "accent": "#6CB33F",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "SS"
+  },
+  {
+   "name": "Jersey Mike's",
+   "color": "#003A70",
+   "accent": "#D2232A",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "JM"
+  },
+  {
+   "name": "Firehouse Subs",
+   "color": "#B41F24",
+   "accent": "#F3B33D",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "FS"
+  },
+  {
+   "name": "Qdoba",
+   "color": "#3D2520",
+   "accent": "#E2492F",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "Q"
+  },
+  {
+   "name": "Moe's Southwest Grill",
+   "color": "#B5121B",
+   "accent": "#FDB913",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "MS"
+  },
+  {
+   "name": "Krispy Kreme",
+   "color": "#00704A",
+   "accent": "#D21033",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "KK"
+  },
+  {
+   "name": "Baskin-Robbins",
+   "color": "#E31C79",
+   "accent": "#4E2C1C",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "BR"
+  },
+  {
+   "name": "Panera Bread",
+   "color": "#3E5B2A",
+   "accent": "#F3A623",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "PB"
+  },
+  {
+   "name": "Auntie Anne's",
+   "color": "#00539B",
+   "accent": "#F0B323",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "AA"
+  },
+  {
+   "name": "Cinnabon",
+   "color": "#1F3F7F",
+   "accent": "#E8C27A",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "C"
+  },
+  {
+   "name": "Smoothie King",
+   "color": "#D50032",
+   "accent": "#0076A8",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "SK"
+  },
+  {
+   "name": "Wingstop",
+   "color": "#006938",
+   "accent": "#1A1A1A",
+   "ink": "#FFFFFF",
+   "logo_bg": "#FFFFFF",
+   "initials": "W"
+  }
  ],
  "deals": [
+  {
+   "restaurant": "Shake Shack",
+   "title": "Scary Good Deals",
+   "summary": "Offer only valid for qualifying orders placed at a kiosk in-Shack, or for delivery or pick-up via the Shake Shack Mobile App or shakeshack.com, and fulfilled…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": "2026-10-01",
+   "valid_through": "2026-10-31",
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://shakeshack.com/national-regional-offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Shake Shack",
+   "title": "Shack Sundays",
+   "summary": "Offer only valid for qualifying orders placed at a kiosk in-Shack, or for delivery or pick-up via the Shake Shack Mobile App or shakeshack.com, and fulfilled…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": "2026-12-27",
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": "SHACKSUNDAY",
+   "source_url": "https://shakeshack.com/national-regional-offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Cheesecake Chimichanga On Us w/ Any Purchase Non-Loyalty Promo Code",
+   "summary": "Offer valid with code \"Cheesecake26\" for one (1) Cheesecake Chimichanga on us with any purchase (excl. taxes and fees) at participating Moe's locations only.…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": "2026-12-31",
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Churro Fries On Us w/ Any Purchase Non-Loyalty Promo Code",
+   "summary": "Offer valid with code \"Churro26\" for one (1) order of Churro Fries on us with any purchase (excl. taxes and fees) at participating Moe's locations only. Must…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": "2026-12-31",
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
   {
    "restaurant": "Arby's",
    "title": "Arby’s Delivers More with New Loaded Rewards™ Loyalty Program and Angie Katsanevas Partnership",
@@ -33,7 +350,8 @@
    "requires_rewards": true,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/arbys-angie-katsanevas-partnership/"
+   "source_url": "https://stories.inspirebrands.com/arbys-angie-katsanevas-partnership/",
+   "reported": false
   },
   {
    "restaurant": "Dunkin'",
@@ -49,7 +367,76 @@
    "requires_rewards": true,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/dunkin-and-ll-bean-collaboration/"
+   "source_url": "https://stories.inspirebrands.com/dunkin-and-ll-bean-collaboration/",
+   "reported": false
+  },
+  {
+   "restaurant": "Firehouse Subs",
+   "title": "Buy One Medium Sub, Get One Free",
+   "summary": "EXTRA INNINGS, EXTRA SUBS If an MLB Postseason game goes to extra innings, your BOGO offer will go live the next day. Use code POST in the Firehouse Subs app…",
+   "offer_type": "BOGO",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": "POST",
+   "source_url": "https://www.firehousesubs.com/",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Kids Eat Free",
+   "summary": "Offer valid for Moe Rewards members for one (1) Kids Meal on us with each purchase of an Entrée ( Moe Value Meal, Burritos, Bowls, Stacks, Nachos…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Moe Rewards Sign Up Offer",
+   "summary": "New Moe Rewards members receive one cup of Queso on us through their Rewards Account at participating locations only. Expires 14 days after receipt. Single…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Subway",
+   "title": "Subway® is Giving Away Thousands of FREE Footlong Sandwiches as Americans Confess Their Lunchtime Horrors",
+   "summary": "New survey reveals two-thirds of Americans at least sometimes regret their lunch choice This Halloween season, listen to your SUBconscious and confess at…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://newsroom.subway.com/2026-10-12-Subway-R-is-Giving-Away-Thousands-of-FREE-Footlong-Sandwiches-as-Americans-Confess-Their-Lunchtime-Horrors",
+   "reported": false
   },
   {
    "restaurant": "Taco Bell",
@@ -65,7 +452,8 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.tacobell.com/newsroom/taco-bell-and-duolingo-take-national-taco-day-global"
+   "source_url": "https://www.tacobell.com/newsroom/taco-bell-and-duolingo-take-national-taco-day-global",
+   "reported": false
   },
   {
    "restaurant": "Taco Bell",
@@ -81,7 +469,8 @@
    "requires_rewards": true,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.tacobell.com/newsroom/taco-bell-milk-bar-reunite"
+   "source_url": "https://www.tacobell.com/newsroom/taco-bell-milk-bar-reunite",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -97,7 +486,8 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -113,7 +503,8 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -129,23 +520,93 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
   },
   {
-   "restaurant": "Domino's",
-   "title": "Limited time offer 10/5 - 10/11 50% off all menu priced pizzas.",
-   "summary": "Get 50% off all menu-priced pizzas thru 10/11.",
-   "offer_type": "Percent Off",
+   "restaurant": "Wingstop",
+   "title": "Club Wingstop Free 5Pc Boneless Wings After Signup",
+   "summary": "Valid only for a limited time, expires 14 days from the date and time of issuance, at participating locations in the US only on carryout or delivery orders…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "$5.99 Loaded Fries Non-Loyalty Promo Code",
+   "summary": "Offer valid with code \"Fries26\" for one (1) $5.99 order of Loaded Fries (excl. taxes and fees) at participating Moe's locations only. Upcharges apply for…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$5.99",
+   "valid_from": null,
+   "valid_through": "2026-12-31",
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "30 Wings for $30",
+   "summary": "Available on Wednesday, 9/9/2026, and each week on Thursdays, starting on 9/10/2026 until 12/31/2026, for in-store purchase or on carryout or delivery orders…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$30",
+   "valid_from": "2026-09-10",
+   "valid_through": "2026-12-31",
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Arby's",
+   "title": "Slider Deal",
+   "summary": "Save on sliders for a limited time. Available in-store and in the app. View Details",
+   "offer_type": "Other",
    "great_value": false,
    "price": null,
-   "valid_from": "2026-10-05",
-   "valid_through": "2026-10-11",
-   "status": "Expiring Soon",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
    "requires_app": false,
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.dominos.com/deals"
+   "source_url": "https://www.arbys.com/deals/",
+   "reported": false
+  },
+  {
+   "restaurant": "Cinnabon",
+   "title": "Cinnabon Celebrates National Cinnamon Roll Day with $1 Classic Rolls for Cinnabon Rewards Members",
+   "summary": "",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$1",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.cinnabon.com/newsroom/cinnabon-ncrd",
+   "reported": false
   },
   {
    "restaurant": "Domino's",
@@ -161,7 +622,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.dominos.com/deals"
+   "source_url": "https://www.dominos.com/deals",
+   "reported": false
   },
   {
    "restaurant": "Domino's",
@@ -177,7 +639,8 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.dominos.com/deals"
+   "source_url": "https://www.dominos.com/deals",
+   "reported": false
   },
   {
    "restaurant": "Domino's",
@@ -193,7 +656,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.dominos.com/deals"
+   "source_url": "https://www.dominos.com/deals",
+   "reported": false
   },
   {
    "restaurant": "Domino's",
@@ -209,7 +673,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.dominos.com/deals"
+   "source_url": "https://www.dominos.com/deals",
+   "reported": false
   },
   {
    "restaurant": "Domino's",
@@ -225,7 +690,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.dominos.com/deals"
+   "source_url": "https://www.dominos.com/deals",
+   "reported": false
   },
   {
    "restaurant": "Dunkin'",
@@ -241,7 +707,25 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/dunkin-new-halloween-sips/"
+   "source_url": "https://stories.inspirebrands.com/dunkin-new-halloween-sips/",
+   "reported": false
+  },
+  {
+   "restaurant": "Firehouse Subs",
+   "title": "Start Earning From Sub One",
+   "summary": "FIREHOUSE REWARDS Members can earn points, redeem rewards, and get exclusive deals like birthday rewards and up to $10 off your first order.* *Terms apply.",
+   "offer_type": "Dollar Off",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.firehousesubs.com/",
+   "reported": false
   },
   {
    "restaurant": "Jimmy John's",
@@ -257,7 +741,42 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/jimmy-johns-exclusive-stadium-tote-giveaway/"
+   "source_url": "https://stories.inspirebrands.com/jimmy-johns-exclusive-stadium-tote-giveaway/",
+   "reported": false
+  },
+  {
+   "restaurant": "Little Caesars",
+   "title": "15% Off",
+   "summary": "SCORE BIG! YOUR ORDER OF $15 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT TOUCHDOWN Apply Code",
+   "offer_type": "Percent Off",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": "TOUCHDOWN",
+   "source_url": "https://littlecaesars.com/en-us/deals/",
+   "reported": false
+  },
+  {
+   "restaurant": "Little Caesars",
+   "title": "20% Off",
+   "summary": "GET DELIVERY! YOUR DELIVERY ORDER OF $20 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT WEDELIVER Apply Code",
+   "offer_type": "Percent Off",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": "WEDELIVER",
+   "source_url": "https://littlecaesars.com/en-us/deals/",
+   "reported": false
   },
   {
    "restaurant": "McDonald's",
@@ -273,7 +792,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"
+   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html",
+   "reported": false
   },
   {
    "restaurant": "McDonald's",
@@ -289,7 +809,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"
+   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html",
+   "reported": false
   },
   {
    "restaurant": "McDonald's",
@@ -305,7 +826,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"
+   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html",
+   "reported": false
   },
   {
    "restaurant": "McDonald's",
@@ -321,7 +843,59 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html"
+   "source_url": "https://www.mcdonalds.com/us/en-us/deals.html",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Moe Monday at Moe's Southwest Grill",
+   "summary": "Moe Monday Deal If you’re searching for food deals that actually make Mondays better, you’re in the right place. Moe Monday at Moe’s Southwest Grill is the…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/moemonday",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Moe Rewards Birthday Offer",
+   "summary": "Offer exclusive to select Moe’s Rewards Members at participating locations. Offer valid for (1) one free cup of queso or cup of guac, excluding, add-ons…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Shake Shack",
+   "title": "$2 Sodas, $4 Fries, $6 Shakes",
+   "summary": "Offer only valid for qualifying orders through the Shack Mobile App or via shakeshack.com at participating Shake Shack locations (excluding airports…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$2",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://shakeshack.com/national-regional-offers",
+   "reported": false
   },
   {
    "restaurant": "Sonic",
@@ -337,7 +911,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/sonic-7-big-deal-meal/"
+   "source_url": "https://stories.inspirebrands.com/sonic-7-big-deal-meal/",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -353,7 +928,8 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -369,7 +945,8 @@
    "requires_rewards": false,
    "requires_purchase": false,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -385,7 +962,8 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
   },
   {
    "restaurant": "Wendy's",
@@ -401,7 +979,127 @@
    "requires_rewards": false,
    "requires_purchase": true,
    "promo_code": null,
-   "source_url": "https://www.wendys.com/offers-coupons"
+   "source_url": "https://www.wendys.com/offers-coupons",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Boneless Meal Deal",
+   "summary": "Prices may vary by location. Prices may be higher in Alaska, California, and Hawaii. Valid at participating locations for a limited time on orders placed via…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Bonus Points with Club Wingstop Signup",
+   "summary": "Valid until email offer’s expiration date. Must fully enroll in Club Wingstop to earn one (1) reward of Club Wingstop bonus points. Points awarded within 48…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Club Wingstop Boneless Wings Mondays & Tuesdays",
+   "summary": "Prices may vary by location. Only available at participating locations in the U.S. on Mondays and Tuesdays on orders placed via Wingstop.com or the Wingstop…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Flavor Combos Under $10",
+   "summary": "UNDER $10 AT PARTICIPATING LOCATIONS, BEFORE FEES, TAXES AND GRATUITIES. PRICES MAY BE HIGHER IN ALASKA AND HAWAII. Prices may vary by location. Available at…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$10",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Tender Meal Deal",
+   "summary": "Available for a limited time only to Club Wingstop members on carryout or delivery orders placed via Wingstop.com or the Wingstop App, only at participating…",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Tender Tuesday: 2 Crispy Tenders for $2",
+   "summary": "Two crispy tenders for $2 on Tuesdays at participating locations. Dips cost extra; prices and availability vary by location.",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$2",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.reddit.com/r/fastfood/comments/1j90824/wingstop_launches_2_for_2_tender_tuesday_deal/",
+   "reported": true
+  },
+  {
+   "restaurant": "Wingstop",
+   "title": "Watch Party Bundle",
+   "summary": "Available for in-store purchase or on carryout or delivery orders placed via Wingstop.com or the Wingstop App, only at participating U.S. locations. Bundle…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$7",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.wingstop.com/offers",
+   "reported": false
   }
  ]
 }
