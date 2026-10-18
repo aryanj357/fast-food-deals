@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-10-17T15:41",
- "updated_display": "October 17, 2026",
+ "updated": "2026-10-18T16:05",
+ "updated_display": "October 18, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -814,18 +814,18 @@
   },
   {
    "restaurant": "Little Caesars",
-   "title": "$3 Off",
-   "summary": "DEAL ALERT! YOUR ORDER OF $18 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT 3OFF18 Apply Code",
-   "offer_type": "Dollar Off",
+   "title": "15% Off",
+   "summary": "SCORE BIG! YOUR ORDER OF $15 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT TOUCHDOWN Apply Code",
+   "offer_type": "Percent Off",
    "great_value": false,
-   "price": "$3",
+   "price": null,
    "valid_from": null,
    "valid_through": null,
    "status": "Active",
    "requires_app": false,
    "requires_rewards": false,
    "requires_purchase": false,
-   "promo_code": "3OFF18",
+   "promo_code": "TOUCHDOWN",
    "source_url": "https://littlecaesars.com/en-us/deals/",
    "reported": false
   },
@@ -963,23 +963,6 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://shakeshack.com/national-regional-offers",
-   "reported": false
-  },
-  {
-   "restaurant": "Sonic",
-   "title": "SONIC Kicks Off Football Season with the $7 Big Deal Meal & New Ad Campaign Featuring Baker Mayfield and Bijan Robinson",
-   "summary": "The updated $7 Big Deal Meal now includes a Sundae, making the full meal even sweeter Football and food are one of the greatest pairings of all time, and this…",
-   "offer_type": "Price Point",
-   "great_value": false,
-   "price": "$7",
-   "valid_from": null,
-   "valid_through": null,
-   "status": "Active",
-   "requires_app": false,
-   "requires_rewards": false,
-   "requires_purchase": false,
-   "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/sonic-7-big-deal-meal/",
    "reported": false
   },
   {

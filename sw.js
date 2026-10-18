@@ -1,4 +1,4 @@
-const CACHE = "deals-202610171541";
+const CACHE = "deals-202610181605";
 const SHELL = ["./", "index.html", "deals.json", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
