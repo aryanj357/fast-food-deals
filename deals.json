@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-10-18T16:05",
- "updated_display": "October 18, 2026",
+ "updated": "2026-10-19T14:58",
+ "updated_display": "October 19, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -609,6 +609,23 @@
    "reported": false
   },
   {
+   "restaurant": "Domino's",
+   "title": "Paze Check out with Paze and GET 35% off.",
+   "summary": "Get 35% off menu priced Paze orders. Valid thru 11/8 or 150,000 redeemed.",
+   "offer_type": "Percent Off",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": "2026-11-08",
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.dominos.com/deals",
+   "reported": false
+  },
+  {
    "restaurant": "Moe's Southwest Grill",
    "title": "$5.99 Loaded Fries Non-Loyalty Promo Code",
    "summary": "Offer valid with code \"Fries26\" for one (1) $5.99 order of Loaded Fries (excl. taxes and fees) at participating Moe's locations only. Upcharges apply for…",
@@ -796,23 +813,6 @@
    "reported": false
   },
   {
-   "restaurant": "Krispy Kreme",
-   "title": "$3 Original Glazed ® Dozen When You Buy Any Dozen",
-   "summary": "This Friday, 10/16 thru Sunday, 10/18 A spooky deal to kick off the weekend with dozens of doughnuts! Buy any dozen and get an Original Glazed ® Dozen for…",
-   "offer_type": "Price Point",
-   "great_value": false,
-   "price": "$3",
-   "valid_from": null,
-   "valid_through": null,
-   "status": "Active",
-   "requires_app": false,
-   "requires_rewards": false,
-   "requires_purchase": true,
-   "promo_code": null,
-   "source_url": "https://www.krispykreme.com/deals",
-   "reported": false
-  },
-  {
    "restaurant": "Little Caesars",
    "title": "15% Off",
    "summary": "SCORE BIG! YOUR ORDER OF $15 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT TOUCHDOWN Apply Code",
@@ -831,8 +831,8 @@
   },
   {
    "restaurant": "Little Caesars",
-   "title": "20% Off",
-   "summary": "GET DELIVERY! YOUR DELIVERY ORDER OF $20 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT WEDELIVER Apply Code",
+   "title": "20% Off Any Pizza",
+   "summary": "GET DELIVERY! WITH YOUR DELIVERY ORDER OF ANOTHER PIZZA ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT DELIVERYDEAL Apply Code",
    "offer_type": "Percent Off",
    "great_value": false,
    "price": null,
@@ -841,8 +841,8 @@
    "status": "Active",
    "requires_app": false,
    "requires_rewards": false,
-   "requires_purchase": false,
-   "promo_code": "WEDELIVER",
+   "requires_purchase": true,
+   "promo_code": "DELIVERYDEAL",
    "source_url": "https://littlecaesars.com/en-us/deals/",
    "reported": false
   },
