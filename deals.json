@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-11-02T09:01",
- "updated_display": "November 2, 2026",
+ "updated": "2026-11-05T20:47",
+ "updated_display": "November 5, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -269,23 +269,6 @@
  ],
  "deals": [
   {
-   "restaurant": "Krispy Kreme",
-   "title": "KRISPY KREME® Makes Election Day Sweeter with a FREE Original Glazed® Doughnut on Nov. 3",
-   "summary": "Nov. 2, 2026-- Krispy Kreme® is celebrating Election Day by offering voters a FREE Original Glazed® doughnut at participating U.S. shops on Tuesday, Nov. 3.",
-   "offer_type": "Free Item",
-   "great_value": true,
-   "price": null,
-   "valid_from": "2026-11-03",
-   "valid_through": "2026-11-03",
-   "status": "Expiring Soon",
-   "requires_app": false,
-   "requires_rewards": false,
-   "requires_purchase": false,
-   "promo_code": null,
-   "source_url": "https://investors.krispykreme.com/news-releases/news-release-details/krispy-kremer-makes-election-day-sweeter-free-original-glazedr",
-   "reported": false
-  },
-  {
    "restaurant": "Subway",
    "title": "Subway® Moves Up National Sandwich Day to Tuesday, Oct. 27 and Brings Back the Fritos® Chicken Enchilada Sub",
    "summary": "A FREE Footlong sandwich with the purchase of another Footlong sandwich for all current and new Sub Club members, available Oct. 27 through Nov. 8 on app and…",
@@ -300,6 +283,23 @@
    "requires_purchase": true,
    "promo_code": null,
    "source_url": "https://newsroom.subway.com/2026-10-21-Subway-R-Moves-Up-National-Sandwich-Day-to-Tuesday,-Oct-27-and-Brings-Back-the-Fritos-R-Chicken-Enchilada-Sub",
+   "reported": false
+  },
+  {
+   "restaurant": "Shake Shack",
+   "title": "Scary Good Deals",
+   "summary": "Offer only valid for qualifying orders placed at a kiosk in-Shack, or for delivery or pick-up via the Shake Shack Mobile App or shakeshack.com, and fulfilled…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": "2026-10-01",
+   "valid_through": "2026-11-10",
+   "status": "Expiring Soon",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": true,
+   "promo_code": null,
+   "source_url": "https://shakeshack.com/national-regional-offers",
    "reported": false
   },
   {
@@ -405,6 +405,23 @@
    "reported": false
   },
   {
+   "restaurant": "Chipotle",
+   "title": "Chipotle Expands Athlete Card Program to More Than 2,300 College Athletes",
+   "summary": "Every varsity athlete at FSU will receive a customized card that grants one free entrée per week for 15 weeks during their respective athletic seasons.",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://newsroom.chipotle.com/2026-11-04-CHIPOTLE-EXPANDS-ATHLETE-CARD-PROGRAM-TO-MORE-THAN-2,300-COLLEGE-ATHLETES",
+   "reported": false
+  },
+  {
    "restaurant": "Dunkin'",
    "title": "Dunkin'® and L.L.Bean® Debut the Ultimate Fall Blend, a First-Ever Collab Between the Two New England Icons",
    "summary": "Beginning on the first day of fall, Dunkin’ and L.L.Bean celebrate the season with limited-edition giveaways, a free coffee offer for Dunkin’ Rewards members…",
@@ -487,6 +504,23 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://www.moes.com/offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Qdoba",
+   "title": "QDOBA Gets Cozy with New Chicken Tinga and Returning Fan-Favorite Tortilla Soup",
+   "summary": "The combination of ingredients in Chicken Tinga brings bold, comforting flavor to any create-your-own entrée – which always comes with free, hand-crafted guac…",
+   "offer_type": "Free Item",
+   "great_value": true,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.qdoba.com/media/qdoba-gets-cozy-with-new-chicken-tinga-and-returning-fan-favorite-tortilla-soup",
    "reported": false
   },
   {
@@ -643,23 +677,6 @@
    "reported": false
   },
   {
-   "restaurant": "Sonic",
-   "title": "Sip to the Season at SONIC with the New Santa Slush Float and Smoked Gouda and Bacon SONIC Smasher™",
-   "summary": "The new Santa Slush Float and Smoked Gouda and Bacon SONIC Smasher ™, alongside a refreshed $7 Big Deal Meal, are available today in the SONIC® App and…",
-   "offer_type": "Price Point",
-   "great_value": false,
-   "price": "$7",
-   "valid_from": "2026-11-02",
-   "valid_through": "2026-11-02",
-   "status": "Expiring Soon",
-   "requires_app": true,
-   "requires_rewards": false,
-   "requires_purchase": false,
-   "promo_code": null,
-   "source_url": "https://stories.inspirebrands.com/sip-to-the-season-at-sonic/",
-   "reported": false
-  },
-  {
    "restaurant": "Moe's Southwest Grill",
    "title": "National Nacho Day - $5.99 Nacho Entree",
    "summary": "Offer valid in store on 11/6/26 for a $5.99 Nacho Entree (excluding taxes and fees) at participating locations. Excludes add-ons, extras, and premium…",
@@ -776,6 +793,23 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://www.arbys.com/deals/",
+   "reported": false
+  },
+  {
+   "restaurant": "Burger King",
+   "title": "Big Holiday Cheer Comes In Mini Packages With The Return Of The Burger King® Advent Calendar",
+   "summary": "As an extra holiday treat, the final door reveals a miniature $5 BK digital coupon for Royal Perks members to cap off the countdown.",
+   "offer_type": "Other",
+   "great_value": false,
+   "price": null,
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": true,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://news.bk.com/blog-posts/big-holiday-cheer-comes-in-mini-packages-with-the-return-of-the-burger-king-r-advent-calendar",
    "reported": false
   },
   {
@@ -1099,6 +1133,23 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://shakeshack.com/national-regional-offers",
+   "reported": false
+  },
+  {
+   "restaurant": "Sonic",
+   "title": "SONIC and Chad Michael Murray Bring Hometown Holiday Magic to Life with “’Tis the Season to SONIC”",
+   "summary": "The Santa Slush Float is part of the new SONIC winter menu , featuring the Smoked Gouda and Bacon SONIC Smasher™ , the $7 Big Deal Meal , the Merry Berry Fizz…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$7",
+   "valid_from": null,
+   "valid_through": null,
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": false,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://stories.inspirebrands.com/tis-the-season-to-sonic/",
    "reported": false
   },
   {
