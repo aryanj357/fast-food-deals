@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-11-20T15:33",
- "updated_display": "November 20, 2026",
+ "updated": "2026-11-21T19:31",
+ "updated_display": "November 21, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -538,23 +538,6 @@
    "requires_purchase": false,
    "promo_code": null,
    "source_url": "https://www.qdoba.com/media/qdoba-gets-cozy-with-new-chicken-tinga-and-returning-fan-favorite-tortilla-soup",
-   "reported": false
-  },
-  {
-   "restaurant": "Smoothie King",
-   "title": "How to Order at Smoothie King",
-   "summary": "Our Healthy Rewards program lets you earn points on every purchase and redeem them for free smoothies and other valuable perks, making it a smart choice for…",
-   "offer_type": "Free Item",
-   "great_value": true,
-   "price": null,
-   "valid_from": null,
-   "valid_through": null,
-   "status": "Active",
-   "requires_app": false,
-   "requires_rewards": true,
-   "requires_purchase": false,
-   "promo_code": null,
-   "source_url": "https://www.smoothieking.com/stories/how-to-order-at-smoothie-king/",
    "reported": false
   },
   {
