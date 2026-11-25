@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-11-24T21:01",
- "updated_display": "November 24, 2026",
+ "updated": "2026-11-25T13:35",
+ "updated_display": "November 25, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -439,23 +439,6 @@
    "reported": false
   },
   {
-   "restaurant": "Firehouse Subs",
-   "title": "Buy One Medium Sub, Get One Free",
-   "summary": "EXTRA INNINGS, EXTRA SUBS If an MLB Postseason game goes to extra innings, your BOGO offer will go live the next day. Use code POST in the Firehouse Subs app…",
-   "offer_type": "BOGO",
-   "great_value": true,
-   "price": null,
-   "valid_from": null,
-   "valid_through": null,
-   "status": "Active",
-   "requires_app": true,
-   "requires_rewards": false,
-   "requires_purchase": false,
-   "promo_code": "POST",
-   "source_url": "https://www.firehousesubs.com/",
-   "reported": false
-  },
-  {
    "restaurant": "McDonald's",
    "title": "Free Snack Wrap®? Say less.",
    "summary": "New here? Start with a free Ranch or Spicy Snack Wrap on your first purchase of $1+ when you download the app.* Every $1 you spend earns 100 points…",
@@ -674,6 +657,23 @@
    "requires_purchase": true,
    "promo_code": null,
    "source_url": "https://www.panerabread.com/en-us/press/press-room/panera-celebrates-the-seasons-perfectly-imperfect-moments-with-cozy-holiday-menu-drop-and-new-collectible-snowman-cups.html",
+   "reported": false
+  },
+  {
+   "restaurant": "Moe's Southwest Grill",
+   "title": "Welcome to Moe’s Day",
+   "summary": "Offer valid at participating locations on 12/9. Receive a $6 Burrito or Bowl (includes Regular Burritos, Bowls, and Jr. Burritos; excludes Homewrecker…",
+   "offer_type": "Price Point",
+   "great_value": false,
+   "price": "$6",
+   "valid_from": "2026-12-09",
+   "valid_through": "2026-12-09",
+   "status": "Active",
+   "requires_app": false,
+   "requires_rewards": true,
+   "requires_purchase": false,
+   "promo_code": null,
+   "source_url": "https://www.moes.com/offers",
    "reported": false
   },
   {
@@ -933,18 +933,18 @@
   },
   {
    "restaurant": "Little Caesars",
-   "title": "$5 Off",
-   "summary": "ORDER NOW! YOUR ORDER OF $30 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT 5OFF30 Apply Code",
-   "offer_type": "Dollar Off",
+   "title": "15% Off",
+   "summary": "SCORE BIG! YOUR ORDER OF $15 OR MORE ADD ITEMS TO CART • CODE APPLIED AT CHECKOUT TOUCHDOWN Apply Code",
+   "offer_type": "Percent Off",
    "great_value": false,
-   "price": "$5",
+   "price": null,
    "valid_from": null,
    "valid_through": null,
    "status": "Active",
    "requires_app": false,
    "requires_rewards": false,
    "requires_purchase": false,
-   "promo_code": "5OFF30",
+   "promo_code": "TOUCHDOWN",
    "source_url": "https://littlecaesars.com/en-us/deals/",
    "reported": false
   },
