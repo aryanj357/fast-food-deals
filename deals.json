@@ -1,7 +1,7 @@
 {
  "title": "Fast Food Deals",
- "updated": "2026-11-25T13:35",
- "updated_display": "November 25, 2026",
+ "updated": "2026-11-26T20:24",
+ "updated_display": "November 26, 2026",
  "restaurants_checked": [
   "McDonald's",
   "Taco Bell",
@@ -651,7 +651,7 @@
    "price": null,
    "valid_from": "2026-12-03",
    "valid_through": "2026-12-03",
-   "status": "Active",
+   "status": "Expiring Soon",
    "requires_app": false,
    "requires_rewards": false,
    "requires_purchase": true,
